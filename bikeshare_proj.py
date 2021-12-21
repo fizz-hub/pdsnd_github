@@ -41,7 +41,7 @@ def get_filters():
                     "'sunday' to 'saturday'] : ").lower().strip()
     day_filter = ['all', 'sunday', 'monday', 'tuesday',
                   'wednesday', 'thursday', 'friday', 'saturday']
-    
+    # this will ensure the code doesnt break should user enter the wrong day
     while day not in day_filter:
         print('looks like you entered the wrong day')
         day = input("\nselect the day of the week from\n['all', "
