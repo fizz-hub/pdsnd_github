@@ -52,6 +52,9 @@ In this project, written code was used to provide the following information:
 * counts of each gender (only available for NYC and Chicago)
 * earliest, most recent, most common year of birth (only available for NYC and Chicago)
 
+## 5. File indexing 
+* Show 10 rows of the raw data
+
 # Technologies Used:
 * Python
 * Numpy and Pandas
