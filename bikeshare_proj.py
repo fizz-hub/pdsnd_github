@@ -212,7 +212,7 @@ def view_data(df):
 
     answer = input("Do you wish to see the first 10 rows of the raw data set? (yes or no): ").lower().strip() #requesting user consent to display the dataset
 
-    #index position holder for viewing the data set rows in step of 5's
+    #index position holder for viewing the data set rows in step of 10's
     start_index = 0
     end_index = 10
 
