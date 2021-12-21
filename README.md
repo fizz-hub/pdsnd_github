@@ -61,4 +61,6 @@ In this project, written code was used to provide the following information:
 * Visual Studio Code
 * Gitbash
 
-
+# Credits:
+Thanks to the Udacity platform for providing the Programming for Data Science with Python Nanodegree program.
+Thanks to access bank for providing the opportunity for Africans to develop tech skills and advance their career.
