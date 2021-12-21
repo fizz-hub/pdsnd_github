@@ -21,6 +21,7 @@ def get_filters():
                      "New York City or Washington ] : ").lower().strip()
     city_filter = ['chicago', 'new york city', 'washington']
     while city not in city_filter:
+    # this will ensure that the code doesn't break should you enter the wrong city
         print('Looks like you entered the wrong city, enter any of the following city: chicago, new york city, washington')
         city = input("\nSelect one of the following cities:\n[ Chicago, "
                      "New York or Washington ] : ").lower().strip()
@@ -29,6 +30,7 @@ def get_filters():
                         "or type 'all' to select all the months  : ").lower().strip()
     month_filter = ['all', 'january', 'february', 'march',
                     'april', 'may', 'june']
+    # this will ensure the code doesn't break should you enter the wrong month
     while month not in month_filter:
         print('Looks like you entered the wrong month')
         month = input("\nnow select a month from january to june,\n" 
@@ -39,6 +41,7 @@ def get_filters():
                     "'sunday' to 'saturday'] : ").lower().strip()
     day_filter = ['all', 'sunday', 'monday', 'tuesday',
                   'wednesday', 'thursday', 'friday', 'saturday']
+    # this will ensure the code doesnt break should user enter the wrong day
     while day not in day_filter:
         print('looks like you entered the wrong day')
         day = input("\nselect the day of the week from\n['all', "
@@ -212,7 +215,7 @@ def view_data(df):
 
     answer = input("Do you wish to see the first 10 rows of the raw data set? (yes or no): ").lower().strip() #requesting user consent to display the dataset
 
-    #index position holder for viewing the data set rows in step of 5's
+    #index position holder for viewing the data set rows in step of 10's
     start_index = 0
     end_index = 10
 
