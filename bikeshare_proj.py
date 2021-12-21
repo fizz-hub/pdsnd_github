@@ -30,7 +30,7 @@ def get_filters():
                         "or type 'all' to select all the months  : ").lower().strip()
     month_filter = ['all', 'january', 'february', 'march',
                     'april', 'may', 'june']
-    
+    # this will ensure the code doesn't break should you enter the wrong month
     while month not in month_filter:
         print('Looks like you entered the wrong month')
         month = input("\nnow select a month from january to june,\n" 
