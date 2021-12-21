@@ -21,6 +21,7 @@ def get_filters():
                      "New York City or Washington ] : ").lower().strip()
     city_filter = ['chicago', 'new york city', 'washington']
     while city not in city_filter:
+    # this will ensure that the code doesn't break should you enter the wrong city
         print('Looks like you entered the wrong city, enter any of the following city: chicago, new york city, washington')
         city = input("\nSelect one of the following cities:\n[ Chicago, "
                      "New York or Washington ] : ").lower().strip()
@@ -29,6 +30,7 @@ def get_filters():
                         "or type 'all' to select all the months  : ").lower().strip()
     month_filter = ['all', 'january', 'february', 'march',
                     'april', 'may', 'june']
+    
     while month not in month_filter:
         print('Looks like you entered the wrong month')
         month = input("\nnow select a month from january to june,\n" 
@@ -39,6 +41,7 @@ def get_filters():
                     "'sunday' to 'saturday'] : ").lower().strip()
     day_filter = ['all', 'sunday', 'monday', 'tuesday',
                   'wednesday', 'thursday', 'friday', 'saturday']
+    
     while day not in day_filter:
         print('looks like you entered the wrong day')
         day = input("\nselect the day of the week from\n['all', "
